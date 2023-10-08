@@ -1,0 +1,315 @@
+@import "../../colors.css";
+
+.header-first{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    z-index: 99999;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    align-items: center;
+    z-index: 999;
+}
+
+.header-2{
+    display: flex;
+    gap: 120px;
+    align-items: center;
+}
+
+
+.header-3{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.logo{
+    padding-top: 10px;
+    
+}
+
+
+.search-bar input{
+    border: 2px solid var(--border-color);
+    height: 44px;
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 13px;
+    font-weight: bold;
+    padding-right: 50px;
+
+}
+
+.search-bar button{
+    border: 2px solid var(--border-color);
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -6px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: var(--border-color);
+    color: white;
+    
+    
+
+}
+
+
+
+
+
+
+
+.cart-btn{
+    border: 2px solid var(--border-color);
+    padding: 5px 45px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.cart-btn i{
+    font-size: 20px;
+}
+
+.cart-counter{
+    background-color: red;
+    padding: 3px 7px;
+    font-size: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+    margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+.auth-dd-button{
+    border: 2px solid var(--border-color);
+    padding: 6px 45px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--border-color);
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    cursor: pointer;
+}
+
+.bi-person{
+    font-size: 20px;
+}
+
+.bi-caret-down-fill{
+    font-size: 20px;
+}
+
+
+
+
+
+.header-bottom{
+    display: flex;
+    gap: 45px;
+    background-color: black;
+    padding: 5px;
+    justify-content: center;
+    z-index: 999;
+
+    flex-wrap: wrap;
+    
+}
+
+.header-bottom li a{
+    
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    padding: 7px;
+    padding-bottom: 7px;
+}
+
+.header-bottom li a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.auth-dd-ops{
+    background-color: white;
+    position: absolute;
+    display: none;
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 3px;
+}
+
+.auth-dd-ops li a{
+    padding: 5px 62px;
+    text-decoration: none;
+    color: black;
+}
+
+.auth-dd-ops li a:hover{
+    color: var(--border-color);
+}
+
+.auth-dd-ops li{
+    width: 204px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.auth-dd-button:hover + .auth-dd-ops{
+    display: block;
+}
+
+.auth-dd-ops:hover{
+    display: block;
+}
+
+
+
+.header-bottom-ops-1{
+    position: absolute;
+    width: 100%;
+    height: 87vh;
+    margin-top: 28px;
+    background-color: rgba(0, 0, 0, 0.255);
+    display: none;
+    justify-content: center;
+    
+}
+
+.header-bottom-ops-1-box{
+    display: flex;
+    
+    width: 100%;
+    height: 200px;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.header-bottom-ops-1-box-img img{
+    height: 145px;
+    width: 145px;
+    margin-top: 25px;
+}
+
+.za li a{
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    
+}
+
+.za li{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.cizgi{
+    width: 0%;
+    background-color: black;
+    height: 2px;
+    
+    margin-top: 5px;
+    transition: all .2s ease-in-out;
+}
+
+.za li a:hover + .cizgi{
+    width: 100%;
+}
+
+.hb-o-1:hover + .header-bottom-ops-1{
+    display: flex;
+}
+.header-bottom-ops-1:hover{
+    display: flex;
+}
+
+.zas{
+    display: flex;
+    gap: 40px;
+}
+
+.header-bottom-2{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+
+
+@media (max-width: 1050px){
+    header{
+        display: block;
+    }
+
+    .header-first{
+        position: relative;
+        
+    }
+}
+
+@media (max-width: 880px){
+    .header-2{
+        display: block;
+
+    }
+
+    .header-3{
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 444px){
+    .header-3{
+        display: block;
+    }
+
+    .cart-btn{
+        margin-top: 10px;
+    }
+
+    .header-bottom-ops-1-box{
+        display: block;
+        height: 100%;
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+

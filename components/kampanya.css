@@ -1,0 +1,54 @@
+.kampanyalar-section{
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.kampanyalar-box{
+    padding: 25px;
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+
+}
+
+.kampanya-tek-wrapper{
+    width: 30%;
+    overflow: hidden;
+    border-radius: 5px;
+    min-width: 350px;
+    margin-bottom: 20px;
+}
+
+.kampanya-tek-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+}
+
+.kampanya-tek-wrapper img:hover{
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width: 1500px){
+    .kampanyalar-box{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 813px){
+    .kampanyalar-box{
+        display: block;
+        padding: 0;
+    }
+
+    .kampanya-tek-wrapper{
+        width: 100%;
+    }
+
+    .kampanyalar-section{
+        padding: 5px;
+    }
+}
