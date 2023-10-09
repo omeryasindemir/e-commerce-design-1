@@ -1,0 +1,67 @@
+.tekli-section {
+  padding: 25px;
+  margin-top: 200px;
+}
+
+.tekli-wrapper {
+  padding: 20px;
+}
+
+.tekli-box {
+  box-shadow: 0px 5px 10px rgb(202, 202, 202);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.e-pa {
+  padding: 10px;
+  border: 1px solid orangered;
+  border-radius: 5px;
+  color: white;
+  background-color: orangered;
+}
+
+
+.siparis-olustur{
+    box-shadow: 0px 5px 10px rgb(201, 201, 201);
+    margin: 20px;
+    width: 350px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.tekli-sol{
+  display: flex; align-items: center; gap: 20px
+}
+
+@media (max-width: 1369px){
+  .tekli-box{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1320px){
+  .tekli-sol{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tekli-img{
+    width: 100%;
+  }
+
+  .tekli-img img{
+    width: 100%;
+  }
+
+  .tekli-section{
+    padding: 5px;
+  }
+  .tekli-wrapper {
+    padding: 5px;
+  }
+}
