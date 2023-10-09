@@ -1,0 +1,94 @@
+.profil{
+    padding: 25px;
+    margin: 200px;
+    
+}
+
+.profil-wrapper{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.dd{
+    margin-bottom: 30px;
+}
+
+.ee{
+    width: 500px;
+}
+
+.profil-box{
+    border: 1px solid rgba(201, 201, 201, 0.5);
+    box-shadow: 0px 5px 10px rgb(200, 200, 200);
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+.yrk{
+    height: 30px;
+    width: 100%;
+    
+}
+
+.label{
+    position: absolute;
+    padding: 7px;
+    margin-top: -25px;
+    margin-left: 10px;
+    background-color: white;
+    padding-bottom: 0px;
+}
+
+.textares{
+    width: 500px;
+}
+
+@media (max-width: 600px){
+    .ee{
+        width: 100%;
+    }
+
+    .profil-box{
+        width: 100%;
+    }
+
+    .profil{
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px;
+    }
+
+    .profil-wrapper{
+        padding: 5px;
+    }
+}
+
+
+@media (max-width: 1000px){
+    .ee{
+        width: 100%;
+    }
+
+    .profil-box{
+        width: 100%;
+    }
+
+    .profil{
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px;
+    }
+
+    .profil-wrapper{
+        padding: 5px;
+    }
+}
+
+
+@media (max-width: 570px){
+    .textares{
+        width: 100%;
+    }
+}
